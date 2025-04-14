@@ -11,13 +11,13 @@
      <body>
           <form method="POST">
                <p>Plesse select your favourite car</p>
+               <input type="radio" name="car" value="Nissan" id="nissan">
+               <label for="nissan">Nissan</label><br>
                <input type="radio" name="car" value="Toyota" id="toyota">
                <label for="toyota">Toyota</label><br>
-               <input type="radio" name="car" value="Honda" id="honda">
-               <label for="honda">Honda</label><br>
-               <input type="radio" name="car" value="Ford" id="ford">
-               <label for="ford">Ford</label><br>
-               <input type="submit" value="Submit">
+               <input type="radio" name="car" value="Mitsubishi" id="mitsubishi">
+               <label for="mitsubishi">Mitsubishi</label><br>
+               <input type="submit" value="SUBMIT">
           </form>
           <?php
           if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['car'])){
